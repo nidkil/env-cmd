@@ -168,6 +168,14 @@ node bin/env-cmd --fallback .env.local --use-shell "node cmd && node cmd"
 # result:
 # BYE
 # BYE
+
+### `--no-warn` option
+
+By default a warning is displayed if the env file does not exist and the `--fallback` option is not specified. This warning message can be suppressed with the `--no-warn` option.
+
+**Terminal**
+```sh
+./node_modules/.bin/env-cmd --no-warn ./.env.does-no-exist node index.js
 ```
 
 ## Examples
